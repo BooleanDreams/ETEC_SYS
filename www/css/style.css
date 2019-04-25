@@ -1,0 +1,13 @@
+/**/
+/* .container{
+  background-image: url("img/telainicial.png");
+} */
+
+img{
+  width: 100%;
+}
+
+#botao{
+  width: 50%;
+  margin-top:-50%;
+}
