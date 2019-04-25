@@ -10,4 +10,10 @@ img{
 #botao{
   width: 50%;
   margin-top:-50%;
+  border:1 px solid transparent;
+  border-radius: 30px;
+}
+
+#botao:hover{
+  background-color: rgb(230, 30, 99);
 }
