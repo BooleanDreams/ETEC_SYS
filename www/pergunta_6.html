@@ -22,7 +22,22 @@
 </head>
 
 
-<body id="body" style="background-image: url('img/per2.png');" >
+<body id="body" style="background-image: url('img/per2.png');" onload="pegarValores()">
+
+<script>
+  function pegarValores()
+  {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
+
+  }
+</script>
+
 <div class="container">
   <div class="row">
     <div class="col-xl-10">
@@ -30,27 +45,82 @@
     </div>
   </div>
   <div class="questbutton3">
+
+<script>
+  function a()
+  {
+    tu+=10;
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+
+  function b()
+  {
+    adm+=10;
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+
+  function c()
+  {
+    en+=5;
+    tu+=9;
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+
+  function d()
+  {
+    ds+=8;
+    mc+=6;
+    ed+=10
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+</script>
+
+
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:17.5px;">A – Você gostaria de ser <br/>professor de dança</button>
+        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:17.5px;" onclick="a()">A – Você gostaria de ser <br/>professor de dança</button>
       </div>
     </div>
     <div class="linha"></div>
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;"> B – Você gostaria de ser <br/>coordenador da universidade </button>
+        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;" onclick="b()"> B – Você gostaria de ser <br/>coordenador da universidade </button>
       </div>
     </div>
     <div class="linha"></div>
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;">C – Você gostaria de ser <br/>professor de arte, historia e biologia</button>
+        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;" onclick="c()">C – Você gostaria de ser <br/>professor de arte, historia e biologia</button>
       </div>
     </div>
     <div class="linha"></div>
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;">D – Você gostaria de ser <br/>professor de matemática e informática </button>
+        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;" onclick="d()">D – Você gostaria de ser <br/>professor de matemática e informática </button>
       </div>
     </div>
   </div>
