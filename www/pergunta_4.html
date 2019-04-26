@@ -42,7 +42,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xl-10">
-      <p class="pergunta text-center" style="margin-top:90px;">4º . Você é uma pessoa:</p>
+      <p class="pergunta text-center" style="margin-top:90px;" onclick="exibir()">4º . Você é uma pessoa:</p>
     </div>
   </div>
   <div class="questbutton">
@@ -111,6 +111,18 @@
     localStorage.setItem("en",en);
     localStorage.setItem("mc",mc);
     localStorage.setItem("tu",tu);
+  }
+
+  function exibir()
+  {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
+    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
   }
 </script>
 

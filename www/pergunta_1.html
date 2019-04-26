@@ -75,13 +75,24 @@
     localStorage.setItem("mc",mc);
     localStorage.setItem("tu",tu);
   }
+    function exibir()
+  {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
+    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
+  }
 </script>
 
 <div class="container">
   <div class="linha"></div>
   <div class="row">
     <div class="col-xl-10">
-      <p class="pergunta text-center">1º. Você gosta de trabalhar em equipe?</p>
+      <p class="pergunta text-center" onclick="exibir()">1º. Você gosta de trabalhar em equipe?</p>
     </div>
   </div>
   <div class="questbutton">
