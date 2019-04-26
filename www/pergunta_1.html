@@ -33,23 +33,17 @@
     var en=localStorage.getItem("en"); //enfermagem
     var mc=localStorage.getItem("mc"); //manutencoes
     var tu=localStorage.getItem("tu"); //turismo
-
-
   }
-</script>
 
-<div class="container">
-  <div class="linha"></div>
-  <div class="row">
-    <div class="col-xl-10">
-      <p class="pergunta text-center">1º. Você gosta de trabalhar em equipe?</p>
-    </div>
-  </div>
-  <div class="questbutton">
-
-<script>
   function a()
   {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
     ds+=10;
     en+=8;
     adm+=7;
@@ -64,6 +58,13 @@
 
   function b()
   {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
     mc+=10;
     tu+=10;
 
@@ -75,6 +76,17 @@
     localStorage.setItem("tu",tu);
   }
 </script>
+
+<div class="container">
+  <div class="linha"></div>
+  <div class="row">
+    <div class="col-xl-10">
+      <p class="pergunta text-center">1º. Você gosta de trabalhar em equipe?</p>
+    </div>
+  </div>
+  <div class="questbutton">
+
+
 
     <div class="row">
       <div class="col-xl-12 text-center">
