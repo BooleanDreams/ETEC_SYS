@@ -15,31 +15,19 @@
   <!-- jquery 3.3.1 -->
   <script src="components/jquery-3.3.1.min.js" ></script>
   <script>
-    $(document).on('click','#botao',function(){
-      window.location.replace("pergunta_2.html");
+    $(document).on('click','.result',function(){
+      window.location.replace("https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp");
     });
   </script>
 </head>
 
 
-<body id="body" style="background-image: url('img/per2.png');" >
+<body id="body" style="background-image: url('img/ds.png');" >
 <div class="container">
-  <div class="linha"></div>
-  <div class="row">
-    <div class="col-xl-10">
-      <p class="pergunta text-center">1º. Você gosta de trabalhar em equipe?</p>
-    </div>
-  </div>
-  <div class="questbutton">
+  <div class="resultButton">
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Sim</button>
-      </div>
-    </div>
-    <div class="linha"></div>
-    <div class="row">
-      <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Não</button>
+        <button id="botao" class="btn btn-lg result">INSCREVER-SE</button>
       </div>
     </div>
   </div>

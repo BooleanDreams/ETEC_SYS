@@ -15,8 +15,8 @@
   <!-- jquery 3.3.1 -->
   <script src="components/jquery-3.3.1.min.js" ></script>
   <script>
-    $(document).on('click','#botao',function(){
-      window.location.replace("pergunta_2.html");
+    $(document).on('click','#botaoQuest',function(){
+      window.location.replace("pergunta_4.html");
     });
   </script>
 </head>
@@ -24,22 +24,27 @@
 
 <body id="body" style="background-image: url('img/per2.png');" >
 <div class="container">
-  <div class="linha"></div>
   <div class="row">
     <div class="col-xl-10">
-      <p class="pergunta text-center">1º. Você gosta de trabalhar em equipe?</p>
+      <p class="perguntaT text-center">3º  Os conteúdos escolares que você mais gosta estão ligados à:</p>
     </div>
   </div>
-  <div class="questbutton">
+  <div class="questbutton3">
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Sim</button>
+        <button id="botaoQuest" class="btn btn-lg btn-block">A – Genética e anatomia humana</button>
       </div>
     </div>
     <div class="linha"></div>
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Não</button>
+        <button id="botaoQuest" class="btn btn-lg btn-block" style="font-size:18px;"> B – Matemática, Física e raciocínio lógico </button>
+      </div>
+    </div>
+    <div class="linha"></div>
+    <div class="row">
+      <div class="col-xl-12 text-center">
+        <button id="botaoQuest" class="btn btn-lg btn-block">C – História, Geografia e Sociologia</button>
       </div>
     </div>
   </div>

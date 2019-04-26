@@ -1,0 +1,81 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+img{
+	position: absolute;
+	width: 100%;
+}
+
+#bg{
+	height: 100%;
+	z-index: 1;
+	float: center;
+	overflow: hidden;
+}
+
+#logo
+{
+	margin: auto;
+	float: center;
+	z-index: 3;
+}
+
+#main-text
+{
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	text-align: justify;
+	padding: 10%;
+	font-family: 'Muli', 'Myriad Pro', 'Open Sans';
+	font-weight: 400;
+	color: rgba(256, 256, 256, 0.9);
+	font-size: 125%;
+}
+
+/*.startBTN:link, .startBTN:visited
+{
+	display: block;
+	border-radius: 30px;
+	background-color: white;
+	position: fixed;
+	z-index: 4;
+	text-align: center;
+	padding: 3%;
+	margin: 0 auto;
+	bottom: 5%;
+	/* left: 30%; 
+	float: middle;
+	color: rgb(230, 30, 99);
+	text-decoration: none;
+	font-family: 'Gotham';
+	font-size: 150%;
+	-webkit-box-shadow: 8px 8px 0px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 8px 8px 0px 2px rgba(0,0,0,0.1);
+	box-shadow: 8px 8px 0px 2px rgba(0,0,0,0.1);
+}*/
+
+#botao{
+  
+  /* border:1 px solid transparent; */
+  border-radius: 25px;
+  height: 75px;
+  background-color: white;
+  color: rgb(230, 30, 99);
+  font-size: 36px;
+  font-family: fantasy;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #000000;
+}
+
+
