@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- jquery 3.3.1 -->
   <script src="components/jquery-3.3.1.min.js" ></script>
-  <script>
+  <!-- <script>
     $(document).on('click','#botaoQuest',function(){
       window.location.replace("resultADM.html");
     });
-  </script>
+  </script> -->
 </head>
 
 
@@ -27,12 +27,12 @@
 <script>
   function pegarValores()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
 
   }
@@ -41,7 +41,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xl-10">
-      <p class="perguntaT text-center">6º Se o seu campo de atuação profissional fosse uma Universidade:</p>
+      <p class="perguntaT text-center" onclick="exibir()">6º Se o seu campo de atuação profissional fosse uma Universidade:</p>
     </div>
   </div>
   <div class="questbutton3">
@@ -49,12 +49,12 @@
 <script>
   function a()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     tu+=10;
 
@@ -93,12 +93,12 @@
 
   function b()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     adm+=10;
 
@@ -112,24 +112,23 @@
     if(adm>ds && adm>ed && adm> en && adm >mc && adm>tu)
     {
       location.href="resultADM.html";
-    }
+    }else
     if(ds>adm && ds>ed && ds> en && ds >mc && adm>tu)
     {
       location.href="resultDS.html";
-    }
+    }else
     if(ed>adm && ed>ds && ed> en && ed >mc && ed>tu)
     {
       location.href="resultED.html";
-    }
+    }else
     if(en>adm && en>ds && en> ed && en >mc && en>tu)
     {
       location.href="resultENF.html";
-    }
+    }else
     if(mc>adm && mc>ds && mc> ed && mc >en && mc>tu)
     {
       location.href="resultMC.html";
-    }
-    if(tu>adm && tu>ds && tu> ed && tu >en && tu>mc)
+    }else
     {
       location.href="resultADM.html";
     }
@@ -137,12 +136,12 @@
 
   function c()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     en+=5;
     tu+=9;
@@ -182,12 +181,12 @@
 
   function d()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     ds+=8;
     mc+=6;
@@ -225,6 +224,18 @@
       location.href="resultADM.html";
     }
 
+  }
+
+  function exibir()
+  {
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
+
+    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
   }
 </script>
 

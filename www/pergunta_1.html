@@ -27,22 +27,22 @@
 <script>
   function pegarValores()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
   }
 
   function a()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     ds+=10;
     en+=8;
@@ -58,15 +58,16 @@
 
   function b()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     mc+=10;
     tu+=10;
+    
 
     localStorage.setItem("adm",adm);
     localStorage.setItem("ds",ds);

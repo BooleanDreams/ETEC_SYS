@@ -62,17 +62,17 @@
 <script>
   function a()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
-    ed+=5;
-    en+=7;
-    tu+=10;
-    adm+=9;
+    ed+=parseInt(5);
+    en+=parseInt(7);
+    tu+=parseInt(10);
+    adm+=parseInt(9);
 
     localStorage.setItem("adm",adm);
     localStorage.setItem("ds",ds);
@@ -84,12 +84,12 @@
 
   function b()
   {
-    var adm=localStorage.getItem("adm"); //administracao
-    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
-    var ed=localStorage.getItem("ed"); //edificacoes
-    var en=localStorage.getItem("en"); //enfermagem
-    var mc=localStorage.getItem("mc"); //manutencoes
-    var tu=localStorage.getItem("tu"); //turismo
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
 
     ds+=6;
     mc+=6;
