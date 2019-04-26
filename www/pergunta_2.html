@@ -22,7 +22,22 @@
 </head>
 
 
-<body id="body" style="background-image: url('img/per2.png');" >
+<body id="body" style="background-image: url('img/per2.png');" onclick="pegarValores()">
+
+<script>
+  function pegarValores()
+  {
+    var adm=localStorage.getItem("adm"); //administracao
+    var ds=localStorage.getItem("ds"); //desenvolvimento de sistemas
+    var ed=localStorage.getItem("ed"); //edificacoes
+    var en=localStorage.getItem("en"); //enfermagem
+    var mc=localStorage.getItem("mc"); //manutencoes
+    var tu=localStorage.getItem("tu"); //turismo
+
+
+  }
+</script>
+
 <div class="container">
   <div class="linha"></div>
   <div class="row">
@@ -31,15 +46,46 @@
     </div>
   </div>
   <div class="questbutton2">
+
+<script>
+  function a()
+  {
+    ed+=5;
+    en+=7;
+    tu+=10;
+    adm+=9;
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+
+  function b()
+  {
+    ds+=6;
+    mc+=6;
+
+    localStorage.setItem("adm",adm);
+    localStorage.setItem("ds",ds);
+    localStorage.setItem("ed",ed);
+    localStorage.setItem("en",en);
+    localStorage.setItem("mc",mc);
+    localStorage.setItem("tu",tu);
+  }
+</script>
+
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Sim</button>
+        <button id="botao" class="btn btn-lg btn-block" onclick="a()">Sim</button>
       </div>
     </div>
     <div class="linha"></div>
     <div class="row">
       <div class="col-xl-12 text-center">
-        <button id="botao" class="btn btn-lg btn-block">Não</button>
+        <button id="botao" class="btn btn-lg btn-block" onclick="b()">Não</button>
       </div>
     </div>
   </div>

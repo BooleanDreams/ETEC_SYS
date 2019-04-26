@@ -22,7 +22,27 @@
 </head>
 
 
-<body id="body" style="background-image: url('img/telainicial.png');" >
+<body id="body" style="background-image: url('img/telainicial.png');" onload="iniciarJogo()">
+
+<script>
+  function iniciarJogo()
+  {
+    var adm=0; //administracao
+    var ds=0; //desenvolvimento de sistemas
+    var ed=0; //edificacoes
+    var en=0; //enfermagem
+    var mc=0; //manutencoes
+    var tu=0; //turismo
+
+    localStorage.setItem("adm",0);
+    localStorage.setItem("ds",0);
+    localStorage.setItem("ed",0);
+    localStorage.setItem("en",0);
+    localStorage.setItem("mc",0);
+    localStorage.setItem("tu",0);
+  }
+</script>
+
 <div class="container">
   <div class="initbutton">
     <div class="row">
