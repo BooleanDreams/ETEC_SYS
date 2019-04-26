@@ -8,12 +8,45 @@ img{
 }
 
 #botao{
-  width: 50%;
-  margin-top:-50%;
-  border:1 px solid transparent;
-  border-radius: 30px;
+  
+  /* border:1 px solid transparent; */
+  border-radius: 25px;
+  height: 75px;
+  background-color: white;
+  color: rgb(230, 30, 99);
+  font-size: 36px;
+  font-family: fantasy;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #000000;
+}
+.initbutton{
+  margin-top: 180%;
+}
+.questbutton{
+  margin-top: 100%;
+}
+
+@keyframes show {
+	from {
+    margin-left: 0px;
+		opacity: 0;
+	}
+	to {
+    margin-left: 0px;
+		opacity: 1;
+	}
 }
 
 #botao:hover{
   background-color: rgb(230, 30, 99);
+}
+#body{
+  margin: 10%;
+  background-color:rgb(230, 30, 99); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: absolute;
+  animation-name: show;
+	animation-duration: 0.5s;
 }
