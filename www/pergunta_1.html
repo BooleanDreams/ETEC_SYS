@@ -44,9 +44,9 @@
     var mc=parseInt(localStorage.getItem("mc")); //manutencoes
     var tu=parseInt(localStorage.getItem("tu")); //turismo
 
-    ds+=10;
-    en+=8;
-    adm+=7;
+    ds+=parseInt(5);
+    en+=parseInt(5);
+    adm+=parseInt(2);
 
     localStorage.setItem("adm",adm);
     localStorage.setItem("ds",ds);
@@ -65,8 +65,8 @@
     var mc=parseInt(localStorage.getItem("mc")); //manutencoes
     var tu=parseInt(localStorage.getItem("tu")); //turismo
 
-    mc+=10;
-    tu+=10;
+    mc+=parseInt(7);
+    tu+=parseInt(5);
     
 
     localStorage.setItem("adm",adm);
