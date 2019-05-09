@@ -10,7 +10,7 @@ img{
 #botao{
   
   /* border:1 px solid transparent; */
-  border-radius: 25px;
+  border-radius: 100px;
   height: 75px;
   background-color: white;
   color: rgb(230, 30, 99);
@@ -19,6 +19,14 @@ img{
   border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px #000000;
+  margin-top:10%;
+}
+
+#botao:hover
+{
+  background-color:rgb(230, 30, 99);
+  color:white;
+  border:1px solid transparent;
 }
 
 #botaoQuest{
@@ -43,16 +51,16 @@ img{
   margin-top: 180%;
 }
 .questbutton{
-  margin-top: 120%;
+  margin-top: 100%;
 }
 .questbutton2{
   margin-top: 40%;
 }
 .questbutton3{
-  margin-top: 95%;
+  margin-top: 100%;
 }
 .questbutton4{
-  margin-top: 90%;
+  margin-top: 100%;
 }
 
 .pergunta{
@@ -78,9 +86,11 @@ img{
 .linha{
   margin-top: 10%;
 }
+.linha-{
+  margin-top: 7%;
+}
 
 #body{
-  margin: 10%;
   width: 80%;
   background-color:rgb(230, 30, 99); 
   background-repeat: no-repeat;
