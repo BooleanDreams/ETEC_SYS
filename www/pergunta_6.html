@@ -42,6 +42,20 @@
   <div class="questbutton4">
 
 <script>
+ function exibir()
+  {
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
+
+    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
+  }
+
+
+
   function a()
   {
     var adm=parseInt(localStorage.getItem("adm")); //administracao
@@ -183,9 +197,9 @@
     var mc=parseInt(localStorage.getItem("mc")); //manutencoes
     var tu=parseInt(localStorage.getItem("tu")); //turismo
 
-    ds+=3;
+    ds+=6;
     mc+=6;
-    ed+=7;
+    ed+=5;
 
     localStorage.setItem("adm",adm);
     localStorage.setItem("ds",ds);
@@ -198,40 +212,30 @@
     {
       location.href="resultADM.html";
     }
-    if(ds>adm && ds>ed && ds> en && ds >mc && adm>tu)
+     else if(ds>adm && ds>ed && ds> en && ds >mc && ds>tu)
     {
       location.href="resultDS.html";
     }
-    if(ed>adm && ed>ds && ed> en && ed >mc && ed>tu)
+    else if(ed>adm && ed>ds && ed> en && ed >mc && ed>tu)
     {
       location.href="resultED.html";
     }
-    if(en>adm && en>ds && en> ed && en >mc && en>tu)
+    else if(en>adm && en>ds && en> ed && en >mc && en>tu)
     {
       location.href="resultENF.html";
     }
-    if(mc>adm && mc>ds && mc> ed && mc >en && mc>tu)
+    else if(mc>adm && mc>ds && mc> ed && mc >en && mc>tu)
     {
       location.href="resultMC.html";
     }
-    if(tu>adm && tu>ds && tu> ed && tu >en && tu>mc)
+    else if(tu>adm && tu>ds && tu> ed && tu >en && tu>mc)
     {
       location.href="resultADM.html";
     }
 
   }
 
-  function exibir()
-  {
-    var adm=parseInt(localStorage.getItem("adm")); //administracao
-    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
-    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
-    var en=parseInt(localStorage.getItem("en")); //enfermagem
-    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
-    var tu=parseInt(localStorage.getItem("tu")); //turismo
-
-    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
-  }
+ 
 </script>
 
 

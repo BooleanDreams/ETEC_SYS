@@ -16,6 +16,12 @@
   <script src="components/jquery-3.3.1.min.js" ></script>
   <script>
     $(document).on('click','.result',function(){
+      localStorage.setItem("adm",0);
+      localStorage.setItem("ds",0);
+      localStorage.setItem("ed",0);
+      localStorage.setItem("en",0);
+      localStorage.setItem("mc",0);
+      localStorage.setItem("tu",0);
       window.location.replace("index.html");
     });
   </script>
@@ -26,7 +32,7 @@
 <div class="container">
   <div class="resultButton">
     <div class="row">
-      <div class="col-xl-12 text-center" style="margin-left:25%; margin-top:12%;">
+      <div class="col-xl-12 text-center" style="margin-left:25%; margin-top:10%;">
         <button id="botao" class="btn btn-lg result" style="font-size:24px;">Novamente!</button>
       </div>
     </div>

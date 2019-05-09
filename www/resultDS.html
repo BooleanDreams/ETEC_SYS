@@ -15,14 +15,25 @@
   <!-- jquery 3.3.1 -->
   <script src="components/jquery-3.3.1.min.js" ></script>
   <script>
+    function exibir()
+  {
+    var adm=parseInt(localStorage.getItem("adm")); //administracao
+    var ds=parseInt(localStorage.getItem("ds")); //desenvolvimento de sistemas
+    var ed=parseInt(localStorage.getItem("ed")); //edificacoes
+    var en=parseInt(localStorage.getItem("en")); //enfermagem
+    var mc=parseInt(localStorage.getItem("mc")); //manutencoes
+    var tu=parseInt(localStorage.getItem("tu")); //turismo
+
+    alert('adm:'+adm+'ds:'+ds+'ed:'+ed+'en:'+en+'mc:'+mc+'tu:'+tu);
+  }
     $(document).on('click','.result',function(){
-      window.location.replace("index.html");
       localStorage.setItem("adm",0);
       localStorage.setItem("ds",0);
       localStorage.setItem("ed",0);
       localStorage.setItem("en",0);
       localStorage.setItem("mc",0);
       localStorage.setItem("tu",0);
+      window.location.replace("index.html");
     });
   </script>
 </head>
